@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Sans-Serif;
+    width: 100% auto;
+    height: 400px auto;
+    box-sizing: border-box;
+  }
+  .regargas{
+    margin: 10px auto;
+    display: flex;
+    text-align: center;
+    border:solid 1px #760bc0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    max-width: 460px;
+    width: 100%;
+  }
+  .linhadecima {
+    background-color: #581a88;
+    margin-top: -35px;
+    height: 30px;
+    margin-left: -2px;
+    width: 190px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+    
+  }
+.valores h2{
+  color:#4f4f4f;
+  margin-left: -40px;
+}
+.valores p{
+  color: #333;
+margin-left: -10px;
+margin-top: -15px;
+font-weight:bold;
+}
+.valores1 button{
+  margin-left: 155px;
+  margin-top: 30px;
+  padding: 10px;
+  width: 100px;
+   border-radius: 4px;
+   background-color: #d2274f;
+   font-size: 15px;
+   color: white;
+   border:none;
+   cursor: pointer;
+}
+.conteiner{
+    margin: 10px auto;
+    gap: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.valores2 button{
+  margin-left: 155px;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100px;
+   border-radius: 4px;
+   background-color: #d2274f;
+   font-size: 15px;
+   color: white;
+   border:none;
+   cursor: pointer;"
+    border: solid 3px rgba(0,0,0,0.3);
+}
+nav {
+  background-color: #ffffff;
+  min-height: 5px;
+  padding: 20px;
+  border: 2px solid #e9e1e1f2;
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.log-claro img {
+  width: 20%;
+}
+
+/* HEADER */
+.img-vivo img{
+  width: 100%;
+  max-height: 200px;
+}
+.h2 h2{
+  color: #827a7a;
+  font-size: 20px;
+  text-align: center;
+}
+.pagamentos-ima {
+  display: flex;
+  text-align: center;
+  margin-left: 50px ;
+  max-width: 300px;
+  margin: 10px auto;
+  gap: 20px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.pagamentos-ima img{
+  max-width: 100px;
+}
+.bode {
+  border:solid 1px #cdc8c8;
+  height: 50px;
+  padding: 7px;
+  width: 70px;
+  border-radius: 5px;
+}
+.log1 {
+  display: flex;
+  gap: 20px;
+}
+.pagacom{
+  color: #a09494;
+}
+
+.footer-conteiner{
+  display: flex;
+  width: 100%;
+  height: 130px;
+  max-width: 500px;
+  background-color:#efececbb;
+  margin: 10px auto;
+  
+}
+.footer-conteiner p{
+  margin: 12px;
+  padding: 12px;
+  font-size: 13px;
+}
+.footer-conteiner a{
+  margin: 20px;
+  color: #575050;
+}
+"

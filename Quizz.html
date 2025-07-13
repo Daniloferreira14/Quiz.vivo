@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Quizz</title>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: Sans-Serif;
+    width: 100% auto;
+    height: 200px auto;
+    box-sizing: border-box;
+  }
+  .conteine{
+    text-align: center;
+    margin: 80px auto;
+  }
+  .quizz-div{
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+   height: 800px;
+   max-width: 440px;
+   width: 100%;
+   margin: 10px auto;
+   border-radius: 15px;
+   border: solid 3px rgba(0,0,0,0.1);
+  }
+  .quizz-div img{
+    max-width: 500px;
+    width: 100%;
+    border-radius: 4px;
+    height: 400px;
+  }
+  .quizz-div h3{
+    margin: 10px auto;
+    color: #4f4c4c;
+    font-size: 16px;
+  }
+  .butao-tt{
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    gap: 14px;
+    display: flex;
+    flex-direction: column;
+  }
+  .butao-tt button{
+    padding: 12px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #8a8484;
+  }
+  .botaodeenviar{
+  width:100%;
+  max-width: 400px;
+  }
+  .botaodeenviar button{
+    width: 100%;
+  }
+  button.ativo {
+    background-color:#a42cf3d8;
+    color: white;
+    transition: 1s;
+  }
+  nav {
+  background-color: #ffffff;
+  min-height: 5px;
+  padding: 20px;
+  border: 2px solid #e9e1e1f2;
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.log-claro img {
+  width: 20%;
+}
+.footer{
+  margin: 50px;
+  text-align: center;
+  margin-top: 30px;
+}
+.footer p{
+  color: #767676;
+}
+</style>
+
+</head>
+<body>
+
+
+
+
+ 
+ <div class="some">
+   
+   
+    <nav>
+    <div class="log-claro">
+      <img src="https://i.postimg.cc/pTHjY16S/download.png" style="color:;">
+    </div>
+  </nav>
+  
+  <div class="conteine" id="quizz1">
+  <div class="quizz-div">
+  <img src="https://i.postimg.cc/yNxBjRC1/vivo-pos-3col-240-desk-942x791.jpg">
+<h3>Como você avalia o preço dos planos?</h3>
+<div class="butao-tt">
+  <button onclick="marcarOpcao(this)">Muito caro</button>
+  <button onclick="marcarOpcao(this)">Caro</button>
+  <button onclick="marcarOpcao(this)">Justo</button>
+  <button onclick="marcarOpcao(this)">Barato</button>
+  
+<div class="botaodeenviar">
+<button onclick="enviar('quizz1','quizz2')" id="bottenviar">Enviar</button>
+</div>
+</div>
+</div>
+<footer class="footer" >
+  <p>&copy; Premiação Da Vivo quizz 2025</p>
+</footer>
+</div>
+</div>
+
+
+
+
+  <div class="conteine" style="display:none;" id="quizz2">
+  <div class="quizz-div">
+  <img src="https://i.postimg.cc/dVZtcX0M/13032019-vivo.jpg">
+<h3>Você acha que a cobertura é boa?</h3>
+<br>
+<div class="butao-tt">
+  <button onclick="marcarOpcao(this)">Péssima</button>
+  <button onclick="marcarOpcao(this)">Ruim</button>
+  <button onclick="marcarOpcao(this)">Boa</button>
+  <button onclick="marcarOpcao(this)">Excelente</button>
+  
+<div class="botaodeenviar">
+<button onclick="enviar('quizz2','quizz3')" id="bottenviar">Enviar</button>
+</div>
+</div>
+</div>
+<footer class="footer" >
+  <p>&copy; Premiação Da Vivo quizz 2025</p>
+</footer>
+
+</div>
+</div>
+
+
+
+  <div class="conteine" style="display:none;" id="quizz3">
+  <div class="quizz-div">
+  <img src="https://i.postimg.cc/HWPgW2RT/vivo-velocidade-5g-purpura-centro-320x320.png">
+<h3>Como avalia a velocidade da internet?</h3>
+<br>
+<div class="butao-tt">
+  <button onclick="marcarOpcao(this)">Muito lenta</button>
+  <button onclick="marcarOpcao(this)">Regular</button>
+  <button onclick="marcarOpcao(this)">Rápida</button>
+  <button onclick="marcarOpcao(this)">Muito rápida</button>
+  
+<div class="botaodeenviar">
+<button onclick="enviar('quizz3','quizz4')" id="bottenviar">Enviar</button>
+</div>
+</div>
+</div>
+<footer class="footer" >
+  <p>&copy; Premiação Da Vivo quizz 2025</p>
+</footer>
+
+</div>
+</div>
+
+
+
+  <div class="conteine" style="display:none;" id="quizz4">
+  <div class="quizz-div">
+  <img src="https://i.postimg.cc/HnrF8qRd/images.jpg">
+<h3>Você recomendaria para amigos?</h3>
+<br>
+<div class="butao-tt">
+  <button onclick="marcarOpcao(this)">Nunca</button>
+  <button onclick="marcarOpcao(this)">Talvez</button>
+  <button onclick="marcarOpcao(this)">Sim</button>
+  <button onclick="marcarOpcao(this)">Com certeza</button>
+  
+<div class="botaodeenviar">
+<button onclick="enviar('quizz4','quizz5')" id="bottenviar">Enviar</button>
+</div>
+</div>
+</div>
+<footer class="footer" >
+  <p>&copy; Premiação Da Vivo quizz 2025</p>
+</footer>
+</div>
+
+</div>
+
+
+
+
+  <div class="conteine" style="display:none;" id="quizz5">
+  <div class="quizz-div">
+  <img src="https://i.postimg.cc/8kmYpWCy/central-de-atendimento-vivo.jpg">
+<h3>Como está o atendimento ao cliente?</h3>
+<br>
+<div class="butao-tt">
+  <button onclick="marcarOpcao(this)">Horrível</button>
+  <button onclick="marcarOpcao(this)">Ruim</button>
+  <button onclick="marcarOpcao(this)">Bom</button>
+  <button onclick="marcarOpcao(this)">Muito bom</button>
+  
+<div class="botaodeenviar">
+<button onclick="enviar('quizz5','quizz6')" id="bottenviar">Enviar</button>
+</div>
+</div>
+</div>
+<footer class="footer" >
+  <p>&copy; Premiação Da Vivo quizz 2025</p>
+</footer>
+</div>
+
+</div>
+
+
+
+  <div class="conteine" style="display:none;" id="quizz6">
+  <div class="quizz-div">
+  <img src="https://i.postimg.cc/VLX3bT4F/vivo-5g-opensignal-2411-desk-942x791.webp">
+<h3>Você está satisfeito com a velocidade da internet?
+</h3>
+<br>
+<div class="butao-tt">
+  <button onclick="marcarOpcao(this)">Péssimo</button>
+  <button onclick="marcarOpcao(this)">Ruim</button>
+  <button onclick="marcarOpcao(this)">Sim</button>
+  <button onclick="marcarOpcao(this)">Excelente</button>
+  
+<div class="botaodeenviar">
+<button onclick="enviar('quizz6','quizz7')" id="bottenviar">Enviar</button>
+</div>
+</div>
+</div>
+<footer class="footer" >
+  <p>&copy; Premiação Da Vivo quizz 2025</p>
+</footer>
+</div>
+
+</div>
+
+
+
+  <div class="conteine" style="display:none;" id="quizz7">
+  <div class="quizz-div">
+  <img src="https://i.postimg.cc/RFfjQD49/vivo-modem-wifi-purpura-centro-320x320.png">
+<h3>Você está satisfeito com a qualidade do sinal?
+</h3>
+<br>
+<div class="butao-tt">
+  <button onclick="marcarOpcao(this)">Péssimo</button>
+  <button onclick="marcarOpcao(this)">Ruim</button>
+  <button onclick="marcarOpcao(this)">Sim</button>
+  <button onclick="marcarOpcao(this)">Excelente</button>
+  
+<div class="botaodeenviar">
+<button onclick="enviar('quizz7','quizz8')" id="bottenviar">Enviar</button>
+</div>
+</div>
+</div>
+<footer class="footer" >
+  <p>&copy; Premiação Da Vivo quizz 2025</p>
+</footer>
+</div>
+</div>
+
+
+
+  <div class="conteine" style="display:none;" id="quizz8">
+  <div class="quizz-div">
+  <img src="https://i.postimg.cc/j2FB40m8/675afaeedcd64-VIVO-7.jpg">
+<h3>Você está satisfeito com o atendimento da Vivo?
+</h3>
+<br>
+<div class="butao-tt">
+  <button onclick="marcarOpcao(this)">Péssimo</button>
+  <button onclick="marcarOpcao(this)">Ruim</button>
+  <button onclick="marcarOpcao(this)">Sim</button>
+  <button onclick="marcarOpcao(this)">Excelente</button>
+  
+<div class="botaodeenviar">
+<button onclick="enviar('quizz8','quizz9')" id="bottenviar">Enviar</button>
+</div>
+</div>
+</div>
+<footer class="footer" >
+  <p>&copy; Premiação Da Vivo quizz 2025</p>
+</footer>
+</div>
+</div>
+  
+  
+    <div class="conteine" style="display:none;" id="quizz9">
+  <div class="quizz-div">
+  <img src="https://i.postimg.cc/ncsqRbNv/franquia-vivo-1200x900.png">
+<h3>franquia de internet te satisfaz?
+
+</h3>
+<br>
+<div class="butao-tt">
+  <button onclick="marcarOpcao(this)">Péssimo</button>
+  <button onclick="marcarOpcao(this)">Ruim</button>
+  <button onclick="marcarOpcao(this)">Bom</button>
+  <button onclick="marcarOpcao(this)">Excelente</button>
+  
+<div class="botaodeenviar">
+<button onclick="enviar('quizz9','quizz10')" id="bottenviar">Enviar</button>
+</div>
+</div>
+</div>
+<footer class="footer" >
+  <p>&copy; Premiação Da Vivo quizz 2025</p>
+</footer>
+</div>
+</div>
+
+
+
+
+  <div class="conteine" style="display:none;" id="quizz10">
+  <div class="quizz-div">
+  <img src="https://i.postimg.cc/90ybn6nX/vivo-empresas-servicos-essenciais-2309-desk-942x791.jpg">
+<h3>Como voçê avalia o atendimento da vivo?
+
+</h3>
+<br>
+<div class="butao-tt">
+  <button onclick="marcarOpcao(this)">Péssimo</button>
+  <button onclick="marcarOpcao(this)">Ruim</button>
+  <button onclick="marcarOpcao(this)">Regular</button>
+  <button onclick="marcarOpcao(this)">Excelente</button>
+  
+<div class="botaodeenviar">
+<button onclick="enviar()" id="boiii" id="bottenviar">Enviar</button>
+</div>
+</div>
+</div>
+<script>
+  const botaodeenviar = document.getElementById("boiii")
+botaodeenviar.addEventListener("click", function() {
+  alert("Para voce receber seu premio voçê tem que comfirma sus linha!")
+window.location = "Pagamento.html"
+})
+</script>
+
+<footer class="footer" >
+  <p>&copy; Premiação Da Vivo quizz 2025</p>
+</footer>
+</div>
+ </div>
+</div>
+  
+<script>
+  
+  
+let selecionar = false
+
+function marcarOpcao(botaoClicado) {
+  selecionar = true;
+
+  // Botão Enviar mais próximo (dentro da mesma div)
+  const botaodeenviar = botaoClicado
+    .closest(".quizz-div")
+    .querySelector(".botaodeenviar button");
+
+  botaodeenviar.style.backgroundColor = "#8827f2";
+  botaodeenviar.style.color = "white";
+
+  // Pega todos os botões de escolha dentro do mesmo quizz
+  const botoes = botaoClicado
+    .closest(".butao-tt")
+    .querySelectorAll("button");
+
+  botoes.forEach(b => b.classList.remove("ativo"));
+  botaoClicado.classList.add("ativo");
+}
+
+function enviar(atual,proximo) {
+  if(selecionar) {
+     document.getElementById(atual).style.display = 'none'
+     document.getElementById(proximo).style.display = 'block'
+     
+     selecionar = false
+     
+     
+  } else {
+    alert("Por favor. selecione uma opeção antes de enviar")
+}
+}
+
+
+
+
+
+</script> 
+</body>
+
+</html>
